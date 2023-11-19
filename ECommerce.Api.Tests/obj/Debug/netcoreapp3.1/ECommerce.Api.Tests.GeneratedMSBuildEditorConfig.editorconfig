@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ECommerce.Api.Tests
+build_property.ProjectDir = D:\Courses\Microservices\ECommerce-Microservices\ECommerce.Api.Tests\
