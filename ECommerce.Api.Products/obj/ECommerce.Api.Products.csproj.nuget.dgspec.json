@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Courses\\Microservices\\ECommerce-Microservices\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj": {}
+    "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj": {}
   },
   "projects": {
-    "D:\\Courses\\Microservices\\ECommerce-Microservices\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj": {
+    "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Courses\\Microservices\\ECommerce-Microservices\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj",
+        "projectUniqueName": "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj",
         "projectName": "ECommerce.Api.Products",
-        "projectPath": "D:\\Courses\\Microservices\\ECommerce-Microservices\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj",
+        "projectPath": "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Products\\ECommerce.Api.Products.csproj",
         "packagesPath": "C:\\Users\\CompuStore\\.nuget\\packages\\",
-        "outputPath": "D:\\Courses\\Microservices\\ECommerce-Microservices\\ECommerce.Api.Products\\obj\\",
+        "outputPath": "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Products\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CompuStore\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,6 +51,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.11.1, )"
             }
           },
           "imports": [
@@ -59,8 +63,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }
