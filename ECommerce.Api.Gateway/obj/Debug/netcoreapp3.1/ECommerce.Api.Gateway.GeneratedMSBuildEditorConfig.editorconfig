@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ECommerce.Api.Gateway
+build_property.ProjectDir = D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Gateway\

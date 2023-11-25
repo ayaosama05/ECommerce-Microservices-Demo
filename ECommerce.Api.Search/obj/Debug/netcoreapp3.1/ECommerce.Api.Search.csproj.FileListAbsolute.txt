@@ -60,8 +60,11 @@ D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netc
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.csproj.CoreCompileInputs.cache
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.MvcApplicationPartsAssemblyInfo.cache
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Api.Search.StaticWebAssets.Manifest.cache
-D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Api.Search.StaticWebAssets.xml
-D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\scopedcss\bundle\ECommerce.Api.Search.styles.css
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Api.Search.StaticWebAssets.Pack.cache
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.ECommerce.Api.Search.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.ECommerce.Api.Search.props
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.ECommerce.Api.Search.props
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.ECommerce.Api.Search.props
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.RazorTargetAssemblyInfo.cache
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.csproj.CopyComplete
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search\obj\Debug\netcoreapp3.1\ECommerce.Api.Search.dll

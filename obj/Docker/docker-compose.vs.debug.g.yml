@@ -3,7 +3,7 @@ version: '3.4'
 services:
   ecommerce.api.customers:
     image: ecommerceapicustomers:dev
-    container_name: ECommerce.Api.Customers
+    container_name: "ECommerce.Api.Customers"
     build:
       target: base
       labels:
@@ -17,10 +17,13 @@ services:
     volumes:
       - D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Customers:C:\app
       - D:\GitHub\Repos\ECommerce-Microservices-Demo:C:\src
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - C:\Users\CompuStore\.nuget\packages\:c:\.nuget\packages:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:
@@ -29,9 +32,41 @@ services:
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
+  ecommerce.api.gateway:
+    image: ecommerceapigateway:dev
+    container_name: "ECommerce.Api.Gateway"
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ECommerce.Api.Gateway"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - NUGET_PACKAGES=C:\.nuget\packages
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Gateway:C:\app
+      - D:\GitHub\Repos\ECommerce-Microservices-Demo:C:\src
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
+      - C:\Users\CompuStore\.nuget\packages\:c:\.nuget\packages:ro
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
+
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages  \"C:\\app\\bin\\Debug\\netcoreapp3.1\\ECommerce.Api.Gateway.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
+      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
+
+
   ecommerce.api.orders:
     image: ecommerceapiorders:dev
-    container_name: ECommerce.Api.Orders
+    container_name: "ECommerce.Api.Orders"
     build:
       target: base
       labels:
@@ -45,10 +80,13 @@ services:
     volumes:
       - D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders:C:\app
       - D:\GitHub\Repos\ECommerce-Microservices-Demo:C:\src
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - C:\Users\CompuStore\.nuget\packages\:c:\.nuget\packages:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:
@@ -60,7 +98,7 @@ services:
 
   ecommerce.api.products:
     image: ecommerceapiproducts:dev
-    container_name: ECommerce.Api.Products
+    container_name: "ECommerce.Api.Products"
     build:
       target: base
       labels:
@@ -74,10 +112,13 @@ services:
     volumes:
       - D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Products:C:\app
       - D:\GitHub\Repos\ECommerce-Microservices-Demo:C:\src
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - C:\Users\CompuStore\.nuget\packages\:c:\.nuget\packages:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:
@@ -89,7 +130,7 @@ services:
 
   ecommerce.api.search:
     image: ecommerceapisearch:dev
-    container_name: ECommerce.Api.Search
+    container_name: "ECommerce.Api.Search"
     build:
       target: base
       labels:
@@ -103,10 +144,13 @@ services:
     volumes:
       - D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Search:C:\app
       - D:\GitHub\Repos\ECommerce-Microservices-Demo:C:\src
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - C:\Users\CompuStore\.nuget\packages\:c:\.nuget\packages:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:

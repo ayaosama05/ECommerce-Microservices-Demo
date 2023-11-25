@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mfJaQdAivPl2duPmsMnc/DsWs8w0jDw89AGqXS2IyBfqupFAaFYwVGRutSOGrJ+5GCTXKkTxftk6GdzHxE2WZQ==",
+  "dgSpecHash": "AW8fwLD3y1L/XLZ+pLpopJ5Kzd2FPtHLDmSYVaeciOTrckAAsp0kgpZIzlK+GX3DOyP26xD6BGf6ug8T1zLImg==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Orders\\ECommerce.Api.Orders.csproj",
   "expectedPackageFiles": [

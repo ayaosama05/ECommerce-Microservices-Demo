@@ -26,8 +26,9 @@ namespace ECommerce.Api.Search.Services
             try
             {
                 var client = httpClientFactory.CreateClient("OrdersService");
+                //var response = await client.GetAsync($"gateway/orders/{CustomerId}");
                 var response = await client.GetAsync($"api/orders/{CustomerId}");
-                if(response.IsSuccessStatusCode)
+                if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsByteArrayAsync();
                     var options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };

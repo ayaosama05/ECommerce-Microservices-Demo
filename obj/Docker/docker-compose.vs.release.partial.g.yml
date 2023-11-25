@@ -2,15 +2,18 @@ version: '3.4'
 
 services:
   ecommerce.api.customers:
-    container_name: ECommerce.Api.Customers
+    container_name: "ECommerce.Api.Customers"
     build:
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Customers"
     volumes:
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /fallbackloadremotemanagedpdbs /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:
@@ -20,16 +23,42 @@ services:
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
       com.microsoft.visual-studio.project-name: "ECommerce.Api.Customers"
 
+  ecommerce.api.gateway:
+    container_name: "ECommerce.Api.Gateway"
+    build:
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ECommerce.Api.Gateway"
+    volumes:
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
+
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /fallbackloadremotemanagedpdbs /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages  \"C:\\app\\ECommerce.Api.Gateway.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
+      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
+      com.microsoft.visual-studio.project-name: "ECommerce.Api.Gateway"
+
+
   ecommerce.api.orders:
-    container_name: ECommerce.Api.Orders
+    container_name: "ECommerce.Api.Orders"
     build:
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Orders"
     volumes:
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /fallbackloadremotemanagedpdbs /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:
@@ -41,15 +70,18 @@ services:
 
 
   ecommerce.api.products:
-    container_name: ECommerce.Api.Products
+    container_name: "ECommerce.Api.Products"
     build:
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Products"
     volumes:
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /fallbackloadremotemanagedpdbs /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:
@@ -61,15 +93,18 @@ services:
 
 
   ecommerce.api.search:
-    container_name: ECommerce.Api.Search
+    container_name: "ECommerce.Api.Search"
     build:
       labels:
         com.microsoft.created-by: "visual-studio"
         com.microsoft.visual-studio.project-name: "ECommerce.Api.Search"
     volumes:
-      - C:\Users\CompuStore\onecoremsvsmon\16.11.1204.0:C:\remote_debugger:ro
+      - C:\Users\CompuStore\onecoremsvsmon\17.7.10830.2695:C:\remote_debugger:ro
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\TokenService.Proxy\win10-x64\net6.0:C:\TokenService.Proxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\HotReloadProxy\win10-x64\net6.0:C:\HotReloadProxy:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:C:\HotReloadAgent:ro
 
     entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /fallbackloadremotemanagedpdbs /timeout:2147483646 /LogDebuggeeOutputToStdOut
     labels:

@@ -73,8 +73,11 @@ D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netc
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.csproj.CoreCompileInputs.cache
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.MvcApplicationPartsAssemblyInfo.cache
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Api.Orders.StaticWebAssets.Manifest.cache
-D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Api.Orders.StaticWebAssets.xml
-D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\scopedcss\bundle\ECommerce.Api.Orders.styles.css
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Api.Orders.StaticWebAssets.Pack.cache
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.ECommerce.Api.Orders.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.ECommerce.Api.Orders.props
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.ECommerce.Api.Orders.props
+D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.ECommerce.Api.Orders.props
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.RazorTargetAssemblyInfo.cache
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.csproj.CopyComplete
 D:\GitHub\Repos\ECommerce-Microservices-Demo\ECommerce.Api.Orders\obj\Debug\netcoreapp3.1\ECommerce.Api.Orders.dll

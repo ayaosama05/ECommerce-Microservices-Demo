@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yu1FP0JuJBzRNVGaISCfZUaVO4jwOCQn1uj79xqNd3IsLLc6FlCjLkRzRFHGfbV0FIGb8XNyY7QSgQKGi+wgJw==",
+  "dgSpecHash": "pvU5zRrMC2Ud1uxLyGWstqgewgP1/jqqHlUu2Ue1MV7AHJEUTPKH0DrUuvfVIHhFtoZ1mUeOxonC3I5FmDHgbA==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Tests\\ECommerce.Api.Tests.csproj",
   "expectedPackageFiles": [

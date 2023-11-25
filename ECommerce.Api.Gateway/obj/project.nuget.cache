@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "t3enMxoA15eRTuHHDIhuQbXBtAVjzH3MbAtMk4+RrZtVkYOeuyXvabq2txvfwZheGmbpOzZ9x4V/Bz4Tdc7mjQ==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\Repos\\ECommerce-Microservices-Demo\\ECommerce.Api.Gateway\\ECommerce.Api.Gateway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CompuStore\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.3\\microsoft.aspnetcore.jsonpatch.3.1.3.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\3.1.3\\microsoft.aspnetcore.middlewareanalysis.3.1.3.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.3\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.3.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.3\\microsoft.extensions.dependencyinjection.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\microsoft.extensions.diagnosticadapter\\3.1.3\\microsoft.extensions.diagnosticadapter.3.1.3.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\ocelot\\16.0.0\\ocelot.16.0.0.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
+    "C:\\Users\\CompuStore\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
