@@ -6,6 +6,7 @@ Demo Application using .NET Core API
 
 Small Microservices E-Commerce Application using .NET API with the following structure:
 
+* ECommerce.Api.Gateway
 * ECommerce.Api.Customers
 * ECommerce.Api.Orders
 * ECommerce.Api.Products
@@ -20,15 +21,18 @@ Small Microservices E-Commerce Application using .NET API with the following str
 
 ### API End Points
 
-|      End Point           |        #           |               Result                |
-| ------------------------ | ------------------ | ----------------------------------- |
-| Get All Products         |     Products       |    Get List Of Products             |
-| Get Product By ID        |     Products       |    Get Product Info                 |
-| Get All Customers        |     Customers      |    Get List Of Customers            |
-| Get Customer By ID       |     Customers      |    Get Customer Info                |
-| Get orders By CustomerID |     Orders         |    Get Customer Orders              |
-| Search By CustomerID     |     Search         |    Get Customer Info + his orders   |
+Run End-Points through [Ocelot API Gateway](https://ocelot.readthedocs.io/en/latest/introduction/gettingstarted.html/) / Using Docker
 
+|      End Point           |    Verb       |                        URL                                   |               Result                |
+| ------------------------ | ------------- | -------------------------------------------------------------| ----------------------------------- |
+| Get All Products         |     GET       |      http://localhost:48199/gateway/products                 |    Get List Of Products             |
+| Get Product By ID        |     GET       |      http://localhost:48199/gateway/products/{id}            |    Get Product Info                 |
+| Get All Customers        |     GET       |      http://localhost:48199/gateway/customers                |    Get List Of Customers            |
+| Get Customer By ID       |     GET       |      http://localhost:48199/gateway/customers/{id}           |    Get Customer Info                |
+| Get orders By CustomerID |     GET       |      http://localhost:48199/gateway/orders/{customerId}      |    Get Customer Orders              |
+| Search By CustomerID     |     POST      |      http://localhost:48199/gateway/search                   |    Get Customer Info + his orders   |
+
+> To be solved: `Search End-Point Not working Using Docker` 
 
 
 
